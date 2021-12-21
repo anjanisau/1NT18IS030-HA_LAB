@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Enter the details below:"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/tv1"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:layout_below="@+id/name"
+        android:hint="Contact"
+        android:inputType="textPersonName"
+        android:textSize="24dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_below="@+id/contact"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="24dp"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInsert"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Insert"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Update"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Delete"
+        android:textSize="24dp"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnView"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="View"
+        android:textSize="24dp"></Button>
+</RelativeLayout>
